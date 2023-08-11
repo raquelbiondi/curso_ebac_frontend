@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; /*removendo margem externa e interna que por padrão o navegador possa aplicar aos elementos*/
+}
+
+body > header {
+    background-color: #2f3640;
+    padding: 20px 0px;
+    color: #fffffff7;
+    border-bottom: 2px ridge #2f3640c2;
+}
+
+h1{
+    font-size: 40px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header li a {
+    color: #fffffff7;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.container {
+    width: 1366px ;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*espaço distribuído de forma igualitária entre os itens da seção de artigos*/
+}
+
+.articles article img { /*quando a gente limita a altura da imagem, a largura vai se adequar pra manter a proporção*/
+    height: 180px; 
+    width: 90%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 5px;
+}
+
+section h2, .articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin: 8px 0;
+    margin-right: 4px;
+
+}
+
+.articles article a {
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+#sports .articles article a:hover,
+#economy .articles article a:hover {
+    background-color: #0d7ad3;
+}
+
+.articles article p, .articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.data {
+    font-size: small;
+}
+
+p {
+    width: 90%;
+}
+
+#sports {
+    background-color: #A8DBA8;
+}
+
+#sports .articles article a {
+    background-color: #4f994f;
+}
+
+#economy {
+    background-color: #79BD9A;
+}
+
+#economy .articles article a {
+    background-color: #25754c;
+}
+
+#health {
+    background-color: #3b8686c2;
+}
+
+#health .articles article a {
+    background-color: #154949;
+}
+
+#sci-tec {
+    background-color: #0b486b9a;
+}
+
+#sci-tec .articles article a {
+    background-color:#042b42;
+}
