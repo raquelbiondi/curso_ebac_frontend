@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Pacifico&family=Roboto&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Validação</h1>
+        <h2>Qual número é maior<strong>?</strong></h2>
+
+        <form id="form-validation">
+            <h4>Número A:</h4>
+            <input type="number" name="num1" id="num-a" required placeholder="Digite um número">
+            <h4>Número B:</h4>
+            <input type="number" name="num2" id="num-b" required placeholder="Digite um número"><br>
+            <button type="submit" value="calcular" onclick="verify()">Verificar</button>
+            <p id="answer">
+                A resposta vai aqui
+            </p>
+        </form>
+
+        
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
