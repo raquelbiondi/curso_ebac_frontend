@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 20px 550px;*/
+}
+
+h1{
+    font-size: 45px;
+    color: rgb(16, 53, 16);
+    padding-bottom: 16px;
+}
+
+h2{
+    font-size: 33px;
+    color: rgb(43, 61, 43);
+    padding-bottom: 16px;
+}
+
+#form-deposito .container{
+    display: block;
+    margin-top: 40px;
+}
+
+input, textarea, #btn-depositar, .msg-sucesso, .error-msg {
+    display: block;
+    width: 400px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+#btn-depositar {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#btn-depositar:hover{
+    background-color: #24613e;
+}
+
+input:focus, textarea:focus {
+    outline-color: rgb(68, 102, 68);
+}
+
+textarea{
+    resize: none;
+}
+
+.msg-sucesso {
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none;
+}
+
+.error-msg {
+    font-size: 13px;
+    padding: 8px;
+    background-color: rgba(255, 0, 0, 0.856);
+    color: #fff;
+    margin-bottom: 8px;
+    display: none;
+}
+
+input.error {
+    color: red;
+    border-color: red;
+    outline-color: red;
+}
