@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><img src="images/agenda.png" alt="ícone agenda">Agenda de Contatos</h1>
+            <h2>Adicione abaixo os seus contatos:</h2>
+        </header>
+
+        <form id="form-dados">
+            <input type="text" id="nome-contato" required placeholder="Nome"/>
+            <input type="tel" id="telefone-contato" required placeholder="(xx) xxxxx-xxxx" minlength="8" maxlength="13" size="20">
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr> <!--table row = linha da tabela-->
+                    <th>Nome</th> <!--cabeçalho da tabela-->
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome do contato</td><!--table data = dados da tabela-->
+                    <td>Telefone do contato</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="agenda.js"></script>
+</body>
+</html>
