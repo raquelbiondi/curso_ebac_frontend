@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #121214;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+header .container, #sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 45px;
+    padding-left: 16px;
+}
+
+h1 img {
+    width: 70px;
+    height: 70px;
+    background-color: #E1D4BB;
+    border-radius: 32px;
+}
+
+header nav li {
+    display: inline-flex;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav li a img {
+    width: 40px;
+    height: 40px;
+}
+
+#sobre {
+    background-color: #E1D4BB;
+    padding: 24px 0;
+    color: rgba(0, 0, 0, 0.888);
+}
+
+#sobre h2 {
+    margin-bottom: 16px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#sobre p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.store {
+    margin-right: 32px;
+    width: 700px;
+    height: 700px;
+}
+
+#itens-disponiveis {
+    background-color: #d8d0d0;
+}
+
+#itens-disponiveis h2{
+    padding: 38px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.item {
+    border: solid blue;
+    margin-right: 8px;
+}
+
+ul {
+    display: flex; /*para que os elementos dentro da tag UL fiquem um ao lado do outro*/
+    flex-wrap: wrap; /*para que quando chegar ao limite da tela, crie-se uma nova linha */
+    margin: 0 48px;
+    justify-content: center;
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+}
+
+ul li img {
+    width: 300px;
+    height: 300px;
+}
+
+h3, h4 {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+h4 {
+    font-style: italic;
+}
+
+button {
+    margin: 16px;
+    padding: 3px;
+    font-size: 16px;
+    background-color: #537188;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
