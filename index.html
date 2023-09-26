@@ -1,107 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBAC Brechó</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Bootstrap Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>
-                EBAC Brechó <img src="imagens/cabide.png" alt="logo cabide">
-            </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#sobre">Sobre a Loja</a>
-                </li>
-                <li>
-                    <a href="#itens-disponiveis">Itens</a>
-                </li>
-                <li class="sacola">
-                    <a href="#sacola"><img src="imagens/yellowbag.png" alt="icone sacola de compras"></a>
-                </li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-
-    <section id="sobre">
-        <div class="container">
-            <img class="store" src="imagens/loja-roupas.jpg" alt="imagem de dentro da loja">
-            <div>
-                <h2>Quem somos</h2>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta illum dolore perspiciatis, odit voluptates amet. Vitae ipsum omnis, incidunt quidem suscipit tenetur eligendi sequi. Doloribus iste maiores accusamus laudantium aperiam?
-                </p>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta illum dolore perspiciatis, odit voluptates amet. Vitae ipsum omnis, incidunt quidem suscipit tenetur eligendi sequi. Doloribus iste maiores accusamus laudantium aperiam?
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="itens-disponiveis">
-            <h2>Disponíveis em estoque</h2>
-            <ul>
-                <div class="item">
-                    <li>
-                        <img src="imagens/colete.jpg" alt="colete">
-                        <h3>Colete azul marinho renda</h3>
-                        <h4>Tamanhos disponíveis: M e G</h4>
-                        <button type="button">Adicionar à sacola</button>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <img src="imagens/bota.jpg" alt="bota azul">
-                        <h3>Coturno azul claro inverno</h3>
-                        <h4>Peça Única - Tamanho 36 </h4>
-                        <button type="button">Adicionar à sacola</button>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <img src="imagens/jeans.jpg" alt="calça jeans">
-                        <h3>Calça jeans Mom</h3>
-                        <h4>Tamanhos disponíveis: 38 à 44</h4>
-                        <button type="button">Adicionar à sacola</button>
-                    </li>
-                </div>
-                <div class="item">
-                <li>
-                    <img src="imagens/calca-moletom.jpg" alt="calça de moletom">
-                    <h3>Calça branca de moletom</h3>
-                    <h4>Tamanhos disponíveis: 40 e 42</h4>
-                    <button type="button">Adicionar à sacola</button>
-                </li>
-                </div>
-            </ul>
-    </section>
-
-    <footer>
-        <div class="rodape">
-            <p>2023 &copy; EBAC Brechó - Todos os Direitos Reservados</p>
-            <ul class="icones">
-                <li>
-                    <a href="#">
-                        <img src="imagens/facebook.png" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="imagens/instagram.png" alt="Instagram">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    
+    <div class="container">
+        <h2 class="display-5">Faça seu cadastro conosco</h2>
+        <form>
+            <label class="form-label" for="nome">Seu nome:</label>
+            <input class="form-control" type="text" id="nome">
+            <label class="form-label" for="email">Seu e-mail:</label>
+            <input class="form-control" type="email" id="email">
+            <label class="form-label" for="telefone">Telefone:</label>
+            <input class="form-control" type="tel" id="telefone">
+            <button class="btn btn-info">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
