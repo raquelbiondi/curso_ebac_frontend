@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/luggage.ico" type="image/x-icon">
+    <title>TRIPS Turismo</title>
+    <link rel="stylesheet" href="library/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+            <h1 class="display-4">TRIPS
+                <img class="icon" src="imagens/map-pin.ico">
+                <!--<span class="material-symbols-outlined">travel_explore</span>-->
+            </h1>
+            <h3 class="display-6">Agência de Turismo</h3>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promocionais">Pacotes promocionais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mais-vendidos">Mais vendidos</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    
+<!--aqui embaixo TÁ TUDO CERTO-->
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner"> 
+                <div data-bs-interval="2000" class="carousel-item active">
+                    <img class="d-block w-100" src="imagens/slide1.jpg" />
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="imagens/slide2.jpg" />
+                </div>
+                <div data-bs-interval="2000" class="carousel-item">
+                    <img class="d-block w-100" src="imagens/slide3.jpg" />
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="promocionais">
+        <h2 class="h3">Pacotes Promocionais</h2>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="imagens/acropole-de-athenas.jpg" alt="cidade de Atenas">
+                    <div class="card-body">
+                        <div class="card-title h5">Grécia - Athenas + Ilha de Creta</div>
+                        <p>Pacote de 10 dias com tudo incluso!</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="imagens/ponte-amsterdam.jpg" alt="cidade de Amsterdam">
+                    <div class="card-body">
+                        <div class="card-title h5">Holanda - Amsterdã</div>
+                        <p>Pacote de 5 dias com tudo incluso!</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="imagens/disney.jpg" alt="Castelo da Disney em Orlando">
+                    <div class="card-body">
+                        <div class="card-title h5">Disney - Orlando/FL</div>
+                        <p>Incluso hospedagem e ingressos para os parques</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <div class="container">
+        <section id="mais-vendidos">
+        <h2 class="h3">Mais vendidos</h2>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img src="imagens/florenca.jpg" alt="Florença na Itália">
+                    <div class="card-body">
+                        <div class="card-title h5">Itália</div>
+                        <p>Vivencie o melhor de Florença e Milão</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="imagens/londres.jpg" alt="cidade de Londres">
+                    <div class="card-body">
+                        <div class="card-title h5">Inglaterra</div>
+                        <p>Um tour completo por Londres</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img src="imagens/nyc.jpg" alt="cidade de Nova York">
+                    <div class="card-body">
+                        <div class="card-title h5">EUA - Nova York</div>
+                        <p>7 dias na famosa Big Apple</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <footer class="footer h">
+        <p>2023 &copy; TRIPS Turismo - Todos os Direitos Reservados</p>
+    </footer>
+    
+    <script src="library/bootstrap.bundle.min.js"></script>
+</body>
+</html>
